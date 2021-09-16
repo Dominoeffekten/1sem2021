@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *,
+        *::before,
+        *::after {
+        box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #ffffff;
+        }
+
+        .timeline { /*linjen i midten*/
+            position: relative;
+            width: 100%;
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 15px 0;
+        }
+
+        .timeline::after { /* linjen i midten */
+            content: '';
+            position: absolute;
+            width: 2px;
+            background: #FA4047;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -1px;
+        }
+
+        .container { /* mærkerne */
+            padding: 15px 30px;
+            position: relative;
+            background: inherit;
+            width: 50%;
+        }
+
+        .container.left { /* mærkerne til venstre */
+            left: 0;
+        }
+
+        .container.right { /* mærkerne til højre */
+        left: 50%;
+        }
+
+        .container::after { /*de små cirkeler på tidslinjen */
+            content: '';
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            top: calc(50% - 8px);
+            right: -8px;
+            background: #ffffff;
+            border: 2px solid #FA4047;
+            border-radius: 16px;
+            z-index: 1;
+        }
+
+        .container.right::after { /*de små cirkelr på tidslinjen */
+            left: -8px;
+        }
+
+        .container::before { /* de små streger */
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 2px;
+            top: calc(50% - 1px);
+            right: 8px;
+            background: #FA4047;
+            z-index: 1;
+        }
+
+        .container.right::before {
+            left: 8px;
+        }
+
+        .container .date { /*datoerne på tislinjen */
+            position: absolute;
+            display: inline-block;
+            top: calc(50% - 8px);
+            text-align: center;
+            font-size: 14px;
+            font-weight: bold;
+            color: #FA4047;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            z-index: 1;
+        }
+
+        .container.left .date {/*datoerne på tislinjen */
+            right: -110px;
+        }
+
+        .container.right .date {/*datoerne på tislinjen */
+            left: -110px;
+        }
+
+        .container .content { /*indholdet på mærkerne */
+        padding: 30px 90px 30px 30px;
+        background: #F6D155;
+        position: relative;
+        border-radius: 0 500px 500px 0;
+        }
+
+        .container.right .content { /*indholdet til højre*/
+        padding: 30px 30px 30px 90px;
+        border-radius: 500px 0 0 500px;
+        }
+
+        .container .content h2 { /*overskrifterne på mærkerne */
+        margin: 0 0 10px 0;
+        font-size: 18px;
+        font-weight: normal;
+        color: #DE5937;
+        }
+
+        .container .content p { /*indholdet på mærkerne */
+        margin: 0;
+        font-size: 16px;
+        line-height: 22px;
+        color: #000000;
+        }
+
+        @media (max-width: 767.98px) {
+        .timeline::after {
+            left: 90px;
+        }
+
+        .container {
+            width: 100%;
+            padding-left: 120px;
+            padding-right: 30px;
+        }
+
+        .container.right {
+            left: 0%;
+        }
+
+        .container.left::after, 
+        .container.right::after {
+            left: 82px;
+        }
+
+        .container.left::before,
+        .container.right::before {
+            left: 100px;
+            border-color: transparent #006E51 transparent transparent;
+        }
+
+        .container.left .date,
+        .container.right .date {
+            right: auto;
+            left: 15px;
+        }
+
+        .container.left .icon,
+        .container.right .icon {
+            right: auto;
+            left: 146px;
+        }
+
+        .container.left .content,
+        .container.right .content {
+            padding: 30px 30px 30px 90px;
+            border-radius: 500px 0 0 500px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="timeline">
+        <div class="container left">
+          <div class="date">Monday</div>
+          <div class="content">
+            <h2>Get a browser</h2>
+            <p>
+                It is important to have a browser, so you can see the website. If you can see this, then you have one.
+            </p>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="date">Tuesday</div>
+          <div class="content">
+            <h2>Get a editor</h2>
+            <p>
+                If you want to made a website, you need an editor.
+                It could be
+            </p>
+            <ul>
+                <li>Atom</li>
+                <li>Visuel Studio</li>
+                <li>Sublime Text</li>
+            </ul>
+          </div>
+        </div>
+        <div class="container left">
+          <div class="date">Wednesday</div>
+          <div class="content">
+            <h2>Learn to code</h2>
+            <p>
+                When you have an editor do you need to learn the bacis of HTML, CSS and maybe JavaScript            
+            </p>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="date">Thursday</div>
+          <div class="content">
+            <h2>Begin to code</h2>
+            <p>
+                Now to know how to code, so you need to try it.
+            </p>
+          </div>
+        </div>
+        <div class="container left">
+          <div class="date">Friday</div>
+          <div class="content">
+            <h2>Make a website</h2>
+            <p>
+                Make your first website.
+            </p>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="date">Weekends</div>
+          <div class="content">
+            <h2>Relax</h2>
+            <p>
+                Congrats you have made your first website, now you can relax.
+            </p>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

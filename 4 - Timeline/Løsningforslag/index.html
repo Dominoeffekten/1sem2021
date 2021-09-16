@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Timeline</title>
+    <style>
+        body { 
+            font-family: Helvetica;
+            color:  #8F83E6;
+        }
+        h1{
+            text-align: center;
+        }
+
+        .timeline {
+            width: 300px;
+            margin: auto;
+        }
+
+        .year {
+            border-top: 2px dashed;
+            border-color: #AE1AFA !important;
+            margin:0; padding: 30px;
+            counter-increment: section;
+            position: relative;
+            
+        }
+
+        .year:nth-child(even):before {
+            content: counter(section);
+            right: 100%; 
+            margin-right: -20px;
+            position: absolute;
+            border-radius: 50%;
+            padding: 10px;
+            height: 20px;
+            width: 20px;
+            background-color: #AE1AFA;
+            text-align:center;
+            color: white;
+            font-size: 110%;
+        }
+
+        .year:nth-child(odd):before {
+            content: counter(section);
+            left: 100%; 
+            margin-left: -20px;
+            position: absolute;
+            border-radius: 50%;
+            padding: 10px;
+            height: 20px;
+            width: 20px;
+            background-color: #AE1AFA;
+            text-align:center;
+            color: white;
+            font-size: 110%;
+        }
+
+        .year:nth-child(even) {
+            border-left: 2px dashed;
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+            margin-right: 30px; 
+            padding-right: 0;
+        }
+
+        .year:nth-child(odd) {
+            border-right: 2px dashed;
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 30px;
+            margin-left: 30px; 
+            padding-left: 0;
+        }
+
+        .year:first-child {
+            border-top: 0;
+            border-top-right-radius:0;
+            border-top-left-radius:0;
+        }
+
+        .year:last-child {
+            border-bottom-right-radius:0;
+            border-bottom-left-radius:0;
+        }
+        .fa{
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <section>
+      <h1>How to make a website</h1>
+    </section>
+
+    <section class="timeline">
+        <div class="year">
+            <i class="fa fa-laptop"></i>
+            <h2>Get a browser</h2>
+            <p>It is important to have a browser, so you can see the website. If you can see this, then you have one. </p>
+        </div>
+        <div class="year">
+            <i class="fa fa-file-text-o"></i>
+            <h2>Get a editor</h2>
+            <p>If you want to made a website, you need an editor. <br>It could be</p>
+            <ul>
+                <li>Atom</li>
+                <li>Visuel Studio</li>
+                <li>Sublime Text</li>
+            </ul>
+        </div>
+        <div class="year">
+            <i class="fa fa-code"></i>
+            <h2>Learn to code</h2>
+            <p>When you have an editor do you need to learn the bacis of HTML, CSS and maybe JavaScript</p>
+        </div>
+    </section>
+</body>
+</html>

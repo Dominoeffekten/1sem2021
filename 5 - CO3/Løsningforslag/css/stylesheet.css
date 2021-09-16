@@ -1,0 +1,215 @@
+/* https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/ */
+
+:root {
+	--black: #000;
+	--white: #FFF;
+	--grey: #788287;
+	--red: red;
+}
+
+html, body {
+	height: 100%;
+	font-size:16px;
+	font-family: 'calibri', sans-serif, serif;
+    margin: 0;
+}
+main,header,nav,section,article,footer{
+	width:100%;
+	max-width:100%;
+}
+html {
+	overflow-y: scroll;
+    background-image: url(../images/img1.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+body {
+	letter-spacing: 1px;
+	line-height: 21px;
+    width: 70%; 
+    margin: 0 auto;
+}
+main {
+    background-color: var(--white);
+    width:100%;
+}
+main > :nth-child(n+3){ /*gælder for main men ikke de første 2 elementer*/
+    margin: 0 auto;
+    width: 84%;
+}
+header{
+    width: 100%;
+    text-align: center;
+}
+
+/* menu */
+nav {
+    width: 70%;
+}
+nav li{
+    display: inline;
+}
+nav ul{
+    padding: 0;
+}
+nav li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    color: var(--grey);
+    margin: 10px;
+}
+.active{
+    color: var(--red)!important;
+}
+.active2{
+    color: var(--black)!important;
+}
+header nav:nth-child(1){ /* gælder header nav nr. 1 */
+    background-color:var(--black);
+    height:6%;
+    position: absolute;
+	top: 0;
+}
+header nav:nth-child(1) ul{ /* gælder header nav ul nr. 1 */
+    float:right;
+}
+header nav:nth-child(1) img{ /* gælder header nav img nr. 1 */
+    float: left;
+    width: 7%;
+}
+header nav:nth-child(1) li a { /* gælder header nav li a nr. 1 */
+    color: var(--grey);
+    margin: 10px;
+}
+header nav:nth-child(2){ /* gælder header nav nr. 2 */
+    height:55%;
+    margin-top: 5%;
+    margin-left: 5%;
+    width:95%;
+    font-size: 1.2em;
+}
+header nav:nth-child(2) ul{ /* gælder header nav ul nr. 2 */
+    display:flex;
+    justify-content: space-around;
+    color: var(--white);
+}
+header nav:nth-child(2) li a{ /* gælder header nav li a nr. 2 */
+    color: var(--white);
+    
+}
+
+/* main */
+h2{
+    font-size: 1.2em;
+}
+
+main nav:nth-child(1){ /* gælder main nav nr. 1 */
+    width: 100%;
+    background-color: var(--grey);
+}
+main nav:nth-child(1) ul { /* gælder main nav ul nr. 1 */
+    display: flex;
+    justify-content: left;
+    color: var(--white);
+    padding:1%;
+}
+main nav:nth-child(1) li a{ /* gælder main nav li a nr. 1 */
+    color: var(--white);
+}
+main section:nth-child(2) p{ /* gælder main section p nr. 2 - overskrift og rubrik */
+    color: var(--grey);
+    padding: 0 2% 1% 2%;
+    font-size: 0.8em;
+}
+main section:nth-child(2) p a { /* gælder main section p a nr. 2 - brødkrumme sti*/
+    color: var(--grey);
+    text-decoration: none;
+}
+main section:nth-child(3) p { /* gælder main section nr. 3 - overskrift og rubrik */
+    color: var(--grey);
+    font-size: 1.5em;
+    line-height: 1em;
+}
+main section:nth-child(5) { /* gælder main section nr. 5 - Baggrundsbillede og logo */
+    background-image: url(../images/Lag287.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: auto;
+}
+main section:nth-child(5) div { /*gælder main section div nr. 5 */
+    margin:0 auto;
+    width: 40%;
+    height: auto;
+    padding: 7%;
+}
+
+main section:nth-child(6) { /* gælder main section h2 nr. 6 - circklerne */
+    text-align: center;
+    height:500px;
+}
+main section:nth-child(6) div div{ /* gælder main section div div nr. 6 */
+    width: 49%;
+    float: left;
+}
+main section:nth-child(6) h3 { /* gælder main section h3 nr. 6 */
+    width: 7em;
+    height: 7em;
+    line-height: 7;
+    border-radius: 50%;
+    font-size: 1em;
+    color: var(--white);
+    text-align: center;
+    background: var(--red);
+    margin: 0 auto;
+}
+
+main section:nth-child(7) { /* gælder main section nr. 7 - sponsor */
+    padding: 4%;
+    background-color: var(--grey);
+    width: 92%;
+    display: flex;
+    justify-content: space-evenly;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+}
+/*footer*/
+footer{ /* gælder footer - menu */
+    background-color:var(--black);
+    display: flex;
+}
+footer nav, footer div{ /* gælder footer nav og footer div */
+    display: flex;
+    flex-direction: row;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    font-size: 0.7em;
+    color: var(--grey);
+    margin-left: 1%;
+}
+footer nav li {  /* gælder footer nav a */
+    display: block;
+}
+footer nav a {  /* gælder footer nav a */
+    color: var(--white);
+}
+footer div{  /* gælder footer div */
+    color: var(--grey);
+    font-size: 0.9em;
+    width: 80%;
+    margin-top: 5%;
+}
+footer div span{  /* gælder footer div span */
+    color: var(--red);
+}
+footer div nav a{
+    align-items: flex-end;
+    margin:0;
+}
+footer div nav:last-child li{
+    display: inline;
+    margin:0
+}
