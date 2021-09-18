@@ -1,0 +1,33 @@
+header, main, footer{
+    display: grid;
+    grid-gap: 3%;
+    width:90%;
+    margin: 0 auto;
+    font-family: sans-serif;
+    grid-auto-rows: minmax(30px, auto);
+}
+header, footer{
+    grid-template-columns: repeat(2, 1fr);
+}
+main{
+    grid-template-columns: repeat(3, 1fr);
+    /*grid-auto-rows: minmax(min-content, max-content);*/
+}
+section{
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    padding:5%;
+}
+h3{
+    background-color: #444;
+    color: #fff;
+    padding:1%;
+}
+pre {
+    white-space: pre-wrap;
+}
+section:nth-child(2) article{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+}
