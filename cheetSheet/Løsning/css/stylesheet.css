@@ -15,10 +15,12 @@ section {
     border-radius: 5px;
     padding:5%;
 }
-section:nth-child(2) article{
+.HTMLelements article{
     display: flex;
     flex-wrap: wrap;
-    gap: 2%;
+    align-items: flex-end;
+    
+    gap: 12%;
 }
 h3{
     background-color: #444;

@@ -1,4 +1,6 @@
 console.log("Hello World");
+let st = "&lt;";
+let sl = "&gt;";
 
 /* create a a table */
 document.getElementById("createTableNow").addEventListener("click", function() {
@@ -10,22 +12,22 @@ document.getElementById("createTableNow").addEventListener("click", function() {
     document.getElementById("createListPlaceholder").style.display = "block";
 });
     function createTables(rows, cols, caption){
-        let pTag = "&lt;table&gt; <br>" + "&lt;caption&gt;" + caption + "&lt;/caption&gt; <br>";
+        let pTag = st+"table"+sl + "<br>" + st+"caption"+sl + caption + st+"/caption"+sl + "<br>";
 
-        pTag += "&lt;tr&gt; <br>"; //table rows heading start
+        pTag += st+"tr"+sl + "<br>"; //table rows heading start
         for(var j = 0; j < rows; j++){
-            pTag += "&lt;th&gt;" + "&lt;/th&gt; <br>"; //table headings
+            pTag += st+"th"+sl + st+"th"+sl + "<br>"; //table headings
         };
         pTag += "&lt;/tr&gt; <br>" //table row heading end
 
         for(var i = 0; i < rows; i++){ //number of table rows
-            pTag += "&lt;tr&gt; <br>";
+            pTag += st+"tr"+sl + "<br>";
             for(var k = 0; k < cols; k++){
-                pTag += "&lt;td&gt;" + "&lt;/td&gt; <br>"; //table data
+                pTag += st+"td"+sl + st+"/td"+sl + "<br>"; //table data
             };
-            pTag += "&lt;/tr&gt; <br>";
+            pTag += st+"/tr"+sl + "<br>";
         };
-        pTag += "&lt;/table&gt;";
+        pTag += st+"/table"+sl ;
         document.getElementById("createTablePlaceholder").innerHTML = pTag;
     }
 
@@ -47,11 +49,11 @@ document.getElementById("createListsNow").addEventListener("click", function() {
     }
 });
     function createList(listNumber, ListType){
-        let listTag = "&lt;"+ ListType + "&gt; <br>"; //ul / ol
+        let listTag = st + ListType + sl + "<br>"; //ul / ol
         for(var i = 0; i < listNumber; i++){
-            listTag += "&lt;li&gt;" + "&lt;/li&gt; <br>"; //lists
+            listTag += st+"li"+sl + st+"/li"+sl +"<br>"; //lists
         };
-        listTag += "&lt;/"+ ListType +"&gt;";
+        listTag += st + ListType + sl;
         document.getElementById("createListPlaceholder").innerHTML = listTag;
         document.getElementById("createListPlaceholder").style.display = "block";
     }
