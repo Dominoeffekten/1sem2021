@@ -8,9 +8,11 @@
     <title>Cheat Sheet</title>
 </head>
 <body>
-    <header><h1>Cheat sheet</h1></header>
+    <header>
+        <h1>Cheat sheet</h1>
+    </header>
     <main>
-        <!-- HTMl tags-->
+<!-- HTMl tags-->
         <section>
             <h2>Tags</h2>
             <article>
@@ -19,7 +21,6 @@
                 <pre>&lt;h2&gt;Heading 2&lt;/h2&gt;</pre>
                 <pre>&lt;h6&gt;Heading 6&lt;/h6&gt;</pre>
             </article>
-
             <article>
                 <h3>Paragraphs</h3>
                 <pre>&lt;p&gt;Normal paragraph&lt;/p&gt;</pre>
@@ -39,7 +40,7 @@
                 <pre>&lt;img src="/demo.jpg" alt="description about the img" title="Extra info about the img" width="100" height="48" /&gt;</pre>
             </article>
         </section>
-        <!--HTML Characters-->
+<!--HTML Characters-->
         <section>
             <h2>HTML characters</h2>
             <article>
@@ -52,7 +53,80 @@
 
             </article>
         </section>
-        <!--attributes-->
+        <!--Validators-->
+        <section>
+            <h2>Validators</h2>
+            <a href="https://w3c.github.io/developers/tools/" alt="validators">All validators</a>
+        </section>
+        <section>
+            <h2>Semantic Markup</h2>
+            <article>
+                <h3>Header</h3>
+                <pre>&lt;header&gt; ... &lt;/header&gt;</pre>
+                <p>Used for introduction content or a navigation</p>
+            </article>
+            <article>
+                <h3>Section</h3>
+                <pre>&lt;section&gt; ... &lt;/section&gt;</pre>
+                <p>Defines a section on the web page. There must always be a heading inside</p>
+            </article>
+            <article>
+                <h3>Article</h3>
+                <pre>&lt;article&gt; ... &lt;/article&gt;</pre>
+                <p>Specifies independent, self-contained content.</p>
+            </article>
+        </section>
+<!--list and tables-->
+        <section>
+            <h2>List &amp; tables</h2>
+            <article>
+                <h3>Create tables</h3>
+                <form>
+                    <label for="caption">Caption
+                        <input type="text" id="caption" name="captionsinput"> 
+                    </label><br>
+                    <label for="rows">Rows
+                        <input type="number" id="rows" name="rowsinput"> 
+                    </label><br>
+                    <label for="cols">Cols
+                        <input type="number" id="cols" name="colsinput"> 
+                    </label><br>
+                    <button type="button" id="createTableNow">Make a table</button>
+                </form>
+                <pre id="createTablePlaceholder"></pre>
+            </article>
+            <article>
+                <h3>Tables</h3>
+                <pre>&lt;table&gt;<br> &lt;caption&gt;Information about tables&lt;/caption&gt;<br> &lt;tr&gt;<br>  &lt;th&gt;Table header&lt;/th&gt;<br> &lt;/tr&gt;<br> &lt;tr&gt;<br>  &lt;td&gt;Table data&lt;/td&gt;<br> &lt;/tr&gt;<br>&lt;/table&gt;</pre>
+            </article>
+            <article>
+                <h3>Create lists</h3>
+                <form>
+                    <label for="ordredList">Ordered list
+                        <input type="radio" id="ordredList" name="listType" value="ol">
+                    </label><br>
+                    <label for="unordredList">Unordered lists
+                        <input type="radio" id="unordredList" name="listType" value="ul">
+                    </label><br>
+                    <label for="listNumber">How many?
+                        <input type="number" id="listNumber" name="listNumber"> 
+                    </label><br>
+                    <button type="button" id="createListsNow">Make a list</button>
+                </form>
+                <pre id="createListPlaceholder"></pre>
+            </article>
+            <article>
+                <h3>Ordered lists</h3>
+                <p>A list with numbers</p>
+                <pre>&lt;ol&gt;<br> &lt;li&gt;A list &lt;/li&gt;<br>&lt;/ol&gt;</pre>
+            </article>
+            <article>
+                <h3>Unordered lists</h3>
+                <p>A list with dots</p>
+                <pre>&lt;ul&gt;<br> &lt;li&gt;A list &lt;/li&gt;<br>&lt;/ul&gt;</pre>
+            </article>
+        </section>
+ <!--attributes-->
         <section>
             <h2>Attributes</h2>
             <article>
@@ -74,54 +148,6 @@
                 <h3>Links</h3>
                 <pre>&lt;a href="link" target="_blank"&gt;Link&lt;a&gt;</pre>
             </article>
-        </section>
-        <!--list and tables-->
-        <section>
-            <h2>List &amp; tables</h2>
-            <article>
-                <h3>Create tables</h3>
-                <form id="createTable">
-                    <label for="caption">Caption
-                        <input type="text" id="caption" name="captionsinput"> 
-                    </lable><br>
-                    <label for="rows">Rows
-                        <input type="number" id="rows" name="rowsinput"> 
-                    </lable><br>
-                    <label for="cols">Cols
-                        <input type="number" id="cols" name="colsinput"> 
-                    </lable><br>
-                    <button type="button" id="send">Send</button>
-                </form>
-
-                <div id="createListPlaceholder"></div>
-
-            </article-->
-            <article>
-                <h3>Ordered lists</h3>
-                <p>A list with numbers</p>
-                <pre>&lt;ol&gt;<br> &lt;li&gt;A list &lt;/li&gt;<br>&lt;/ol&gt;</pre>
-            </article>
-            <article>
-                <h3>Unordered lists</h3>
-                <p>A list with dots</p>
-                <pre>&lt;ul&gt;<br> &lt;li&gt;A list &lt;/li&gt;<br>&lt;/ul&gt;</pre>
-            </article>
-            <article>
-                <h3>Tables</h3>
-                <pre>&lt;table&gt;<br> &lt;caption&gt;Information about tables&lt;/caption&gt;<br> &lt;tr&gt;<br>  &lt;th&gt;Table header&lt;/th&gt;<br> &lt;/tr&gt;<br> &lt;tr&gt;<br>  &lt;td&gt;Table data&lt;/td&gt;<br> &lt;/tr&gt;<br>&lt;/table&gt;</pre>
-            </article>
-        </section>
-
-        
-        <section></section>
-     
-        <section></section>
-        
-        <section></section-->
-        <!--Validators-->
-        <section>
-            <h2>Validators</h2>
-            <a href="https://w3c.github.io/developers/tools/" alt="validators">All validators</a>
         </section>
     </main>
     <footer></footer>
