@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+header {
+    background-color: #333;
+    color: white;
+}
+header img{
+    width:20%;
+    height:auto;
+}
+header a {
+    color: white;
+}
+
+.hamburgerNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+.mainNav {
+    display: none;
+}
+.mainNav li {
+    padding: 20px 20px;
+    width: 100%;
+}
+.toggleShow {
+    display: flex;
+    flex-direction: column;
+}
+  
