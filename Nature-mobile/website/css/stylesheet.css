@@ -13,12 +13,10 @@ header nav {
 header nav ul{
     float: right;
     display: inline;
-    margin: 0;
-    padding:0;
+    list-style-type: none;
 }
 header nav ul li{
-    display: inline;
-    list-style-type: none;
+    display: inline-block;
 }
 section, article{
     padding: 10%;
