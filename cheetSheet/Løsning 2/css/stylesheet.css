@@ -1,0 +1,132 @@
+@charset "UTF-8";
+*{
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+/*------------------------
+
+        Visuel page
+
+------------------------*/
+main{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Fill, keeps 50px and creates empty tracks*/
+    grid-gap: 1em;
+    grid-auto-flow: dense;
+    margin: 1rem 0;
+}
+article{ 
+    /* normal row */
+    display: block;
+    padding: 4%;
+}
+h1,h2,h3,p{
+    font-weight: 700;
+}
+h2{
+    border-bottom: black dotted 1px;
+}
+pre, code {
+    white-space: pre-wrap;
+    line-height: 24px;
+    word-wrap: break-word;
+}
+code{
+    margin:1%;
+}
+label input{
+    margin:1% 0;
+}
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color:blue;
+    letter-spacing: 1px;
+}
+header,footer{
+    text-align: center;
+    padding:5%;
+}
+.button{
+    display: inline;
+}
+.buttons button{
+    border: none;
+    padding: 1%;
+    background-color: #FCB86C;
+    cursor: pointer;
+    border-radius: 9px;
+}
+/*------------------------
+        Grid elements
+------------------------*/
+.tall{ 
+    /*make a tall row*/
+    grid-row-end: span 2;
+}
+
+.fixed{
+    /* make a fixed row */
+    grid-row-end: span 1;
+    grid-column-end: span 5;
+    background-color: #B1CFFF;
+}
+.wide{
+    /* make a wide row */
+    grid-column-end: span 2;
+}
+
+.HTMLelements{
+    /* all the small icons */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 6%;
+    grid-row-end: span 2;
+}
+/*------------------------
+        subject
+------------------------*/
+.tags{
+    background-color: #82C7EB;
+    color:midnightblue;
+
+}
+.attributes{
+    background-color: #A5F0E4;
+    color:midnightblue;
+}
+.css{
+    background-color: #BC4F4F;
+    color:#f2f2f2;
+}
+.program{
+    background-color: #F5FAC8;
+    color:midnightblue;
+}
+.markup{
+    background-color: #F6D3AF;
+    color:midnightblue;
+}
+.page{
+    background-color: #8EA1F0;
+    color:#f2f2f2;
+}
+.seo{
+    background-color: #EBBAB4;
+    color:midnightblue;
+}
+.js{
+    background-color: #C1EAAD;
+}
+/*------------------------
+        JS filter
+------------------------*/
+
+.hide { 
+    display:none;
+}
+.show { 
+    display:show;
+}

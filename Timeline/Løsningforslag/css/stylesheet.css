@@ -1,0 +1,93 @@
+body { 
+    font-family: Helvetica;
+    color:  #8F83E6;
+    counter-reset: article; /* Set a counter named 'article', and its initial value is 0. */
+}
+header, main, footer{
+    width:90%;
+    margin: 0 auto;
+}
+/*---------------------
+
+    Visuel elements
+    Main page
+
+---------------------*/
+/* header */
+h1{
+    text-align: center;
+}
+
+/* main */
+section {
+    width: 30%;
+    margin: auto;
+}
+article {
+    border-top: 2px dashed #AE1AFA;
+    margin:0; 
+    padding:11%;
+    counter-increment: article; /* Increment the value of article counter by 1 */
+    position: relative;
+}
+article:nth-child(odd):before {
+    content: counter(article); /* Display the value of article counter, before the content */
+    left: 100%; 
+    margin-left: -20px;
+    position: absolute;
+    border-radius: 50%;
+    padding: 10px;
+    height: 20px;
+    width: 20px;
+    background-color: #AE1AFA;
+    text-align:center;
+    color: white;
+    font-size: 110%;
+}
+
+article:nth-child(odd) {
+    border-right: 2px dashed;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin-left: 30px; 
+    padding-left: 0;
+}
+
+article:nth-child(even):before {
+    content: counter(article); /* Display the value of article counter, before the content */
+    right: 100%; 
+    margin-right: -20px;
+    position: absolute;
+    border-radius: 50%;
+    padding: 10px;
+    height: 20px;
+    width: 20px;
+    background-color: #AE1AFA;
+    text-align:center;
+    color: white;
+    font-size: 110%;
+}
+article:nth-child(even) {
+    border-left: 2px dashed;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    margin-right: 30px; 
+    padding-right: 0;
+}
+article:first-child {
+    border-top: 0;
+    border-top-right-radius:0;
+    border-top-left-radius:0;
+}
+article:last-child {
+    border-bottom-right-radius:0;
+    border-bottom-left-radius:0;
+}
+.fa{
+    font-size: 2em;
+}
+
+/* footer */
+footer p{
+    text-align: center;
+}

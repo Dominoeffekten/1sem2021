@@ -1,0 +1,28 @@
+
+/*-----------------
+
+    SVG elements
+    Snowman
+
+-----------------*/
+.svg{
+  width: 300px;
+  height: 400px;
+  border: 1px solid black;  
+ }
+ 
+.circle {
+  fill: white;
+  stroke: black;
+  stroke-width: 3px;
+}
+
+.hat{
+  fill:none;
+  stroke:#7A3D3E;
+  fill:#7A3D3E;
+  stroke-width: 5px;
+}
+
+
+

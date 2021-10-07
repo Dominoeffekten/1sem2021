@@ -1,21 +1,28 @@
 *{
     font-family: sans-serif;
 }
+
+/*------------------------
+
+        Visuel page
+
+------------------------*/
 main{
     column-count: 4;
-    column-gap: 10px;
+    column-gap: 1%;
 }
 section {
     margin: 0;
     display: grid;
     grid-template-rows: 1fr auto;
-    margin-bottom: 10px;
+    margin-bottom: 1%;
     break-inside: avoid;
     background-color: #f4f4f4;
     border-radius: 5px;
     padding:5%;
 }
 .HTMLelements article{
+    /*section with small icons*/
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
@@ -33,4 +40,7 @@ article > pre{
 }
 pre {
     white-space: pre-wrap;
+}
+label input{
+    margin:1% 0;
 }

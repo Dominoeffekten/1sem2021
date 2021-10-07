@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This site is a guide about HTML, CSS and JavaScript">
+    <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+    <link href="image/favicon.png" rel="icon" type="image/png">
+    <title>Cheat Sheet</title>
+</head>
+<body>
+    <header>
+        <h1>Cheat sheet</h1>
+
+       <div class="buttons">
+            <button>All</button>
+            <button>HTML</button>
+            <button>CSS</button>
+            <button>JS</button>
+            <button>SEO</button>
+            <button>Program</button>
+       </div>
+    </header>
+    <main>
+        <article class="js"><!--loop-->
+            <h2>DOM</h2>
+            <pre>.innerHTML</pre>
+            <pre>.style</pre>
+            <pre>.[attribut]</pre>
+            <pre>node.append(node)</pre>
+            <pre>.value</pre>
+        </article>
+        <article class="js tall"><!--loop-->
+            <h2>DOM</h2>
+            <pre>document.getElementById(id)</pre>
+            <pre>document.getElementsByTagName(tag)</pre>
+            <pre>document.getElementsByClassName(classname)</pre>
+            <pre>document.createElement(element)</pre>
+            <pre>document.setAttribute(attribute, value)</pre>
+            <pre>target.addEventListener(type, function)</pre>
+            <pre>document.querySelector(selectors)</pre>
+        </article>
+        <article class="js"><!--loop-->
+            <h2>Do while loops</h2>
+            <pre>let x = 0;<br>do { <br> x++;<br> console.log(x);<br>} while (false);</pre>
+        </article>
+        <article class="js"><!--loop-->
+            <h2>While</h2>
+            <pre>let i = 0;<br>while (i < 10) { <br> // code to be repeated<br> console.log('Rep ' + i);<br> i++;<br>}<br>console.log('after loop ' + i);</pre>
+        </article>
+        <article class="js"><!--loop-->
+            <h2>For loop</h2>
+            <pre>for (var i = 0; i &gt;= 10; i++){ <br> console.log(i) <br>}</pre>
+        </article>
+        <article class="js tall"> <!--Iteration methods-->
+            <h2>Iteration methods</h2>
+            <p>Calls a function once for each element in an array</p>
+            <pre>.forEach()</pre>
+            <p>Returns a new array with the updated elements</p>
+            <pre>.map()</pre>
+            <p>Checks each element in an array to see if it meets a condition</p>
+            <pre>.filter()</pre>
+            <p>Is used to reduce the array to a single value</p>
+            <pre>.reduce()</pre>
+        </article>
+        <article class="js tall"><!--functions-->
+            <h2>Array</h2>
+            <pre>let arr = [];</pre>
+            <p>Add new items to the end of an array</p>
+            <pre>array.push();</pre>
+            <p>Removes the last element of an array</p>
+            <pre>array.pop();</pre>
+            <p>Adds/removes items to/from an array</p>
+            <pre>array.splice();</pre>
+            <p>Removes the first item of an array</p>
+            <pre>array.shift();</pre>
+            <p>Adds new items to the beginning of an array,</p>
+            <pre>array.unshift();</pre>
+        </article>
+        <article class="js"><!--functions-->
+            <h2>Arrow functions</h2>
+            <pre>const greeting = (name) => { <br> console.log(`Greetings ${name}!`);<br> } <br> greeting("Rikke");</pre>
+        </article>
+        <article class="js"><!--functions-->
+            <h2>Function Expressions</h2>
+            <pre>const func = function(number) &#123;<br> return number + number;<br>&#125;</pre>
+        </article>
+        <article class="js"><!--functions-->
+            <h2>Declared functions</h2>
+            <pre>function firstLastWord(str) { <br> return str.substring(0, str.length - 1); <br>} <br>console.log(firstLastWord('JavaScript') + "S");</pre>
+        </article>
+        <article class="js tall"><!--Logical operators-->
+            <h2>Logical operators</h2>
+            <p>&&</p>
+			<pre >if(10 > 5 && 20 > 10) &#123; <br> console.log("This is true");<br>}</pre>
+			<p>||</p>
+			<pre>if(10 > 5 || "dogs" === "cats") &#123; <br> console.log("This is true");<br>}</pre>
+			<p>!==</p>
+			<pre">if("dogs" !== "cats") &#123; <br> console.log("This is true");<br>}</pre>
+        </article>
+        <article class="js"><!--if/else-->
+            <h2>Conditional Statements</h2>
+            <pre>if(false) &#123; <br> console.log("if block");<br>}else if (false) &#123;<br> console.log("else if block");<br>}else &#123;<br> console.log("else block");<br>&#125;</pre>
+        </article>
+        <article class="js tall"><!--switch-->
+            <h2></h2>
+            <pre>var fruits = "apple";<br>switch(fruits){ <br> case "Banana": <br>  console.log("Banana is good");<br>  break; <br> case "orange": <br>  console.log("Oranges? That is not me");<br>  break;<br> default:<br>  console.log("What fruit is that?")<br>}	</pre>
+        </article>
+        <article class="js tall"><!--datatypes-->
+            <h2>Datatypes</h2>
+            <pre>String</pre>
+            <pre>Number</pre>
+            <pre>Boolean</pre>
+            <pre>Null</pre>
+            <pre>Symbol</pre>
+            <pre>Object</pre>
+            <pre>Undefined</pre>
+        </article>
+        <article class="js"> <!--var-->
+            <h2>Variable</h2>
+            <pre>var = "oneVar";</pre>
+            <pre>let = "anotherNameVat;</pre>
+            <pre>const = "theLastOne";</pre>
+        </article>
+        <article class="js"><!--debug-->
+            <h2>Debug tool</h2>
+            <pre>'use strict';</pre>
+            <pre>console.log();</pre>
+        </article>
+        <article class="html attributes wide"><!--link-->
+            <h2>JavaScript link</h2>
+            <pre>&lt;script type="text/javascript" src="path-to-javascript-file.js"&gt;&lt;/script&gt;</pre>
+        </article>
+        
+        <article class="fixed">
+            <h2>Lets start with some JavaScript</h2>
+        </article>
+
+        <article class="seo wide"> <!--seo-->
+            <h2>Meta data</h2>
+            <p>Description</p>
+            <pre>&lt;meta name="description" content="something"&gt;</pre>
+        </article>
+        <article class="seo"><!--seo-->
+            <h2>robots.txt</h2>
+            <p>Disallow a folder</p>
+            <pre>User-agent: *<br>Disallow: /PDF/</pre>
+            <p>Allow everything</p>
+            <pre>User-agent: *<br> Allow: /</pre>
+        </article>
+        <article class="page"><!--page-->
+            <h2>Free trial page</h2>
+            <p>The main goal to a free trial page is to get someone into your sign up flow.</p>
+        </article>
+        <article class="page"><!--page-->
+            <h2>Sales page</h2>
+            <p>Sales pages are used to sell online courses, one-on-one training, event tickets and so on.</p>
+        </article>
+        <article class="page"><!--page-->
+            <h2>Email signup</h2>
+            <p>Is a page where you can collect emails in exchange for a ebook, report og newsletter.</p>
+        </article>
+        <article class="page"><!--page-->
+            <h2>Landing page</h2>
+            <p>A landing page are designed to do a single action, such as making a purchase, 
+                filling out a form, signing up for a free trial og entering an email address.<br>A landing page have focus on ONE thing.</p>
+        </article>
+        <article class="css"><!--Transform-->
+            <h2>Transform</h2>
+            <p>Rotate</p>
+            <pre>transform: rotate(45deg);</pre>
+            <p>Scale</p>
+            <pre>transform: scale(1.4, 1.4);</pre>
+        </article>
+        <article class="html tags wide"><!--Video-->
+            <h2>Video</h2>
+            <pre>&lt;video width="320" height="240" controls&gt;</pre>
+            <pre>   &lt;source src="movie.mp4" type="video/mp4"&gt;</pre>
+            <pre>      Your browser does not support the video tag.</pre>
+            <pre>&lt;/video&gt;</pre>
+        </article>
+        <article class="css"> <!--Grid-->
+            <h2>Grid</h2>
+            <pre>display: grid;</pre>
+            <p>Rows</p>
+            <pre>grid-template-rows: 50px 50px 50px;</pre>
+            <p>Colums</p>
+            <pre>grid-template-columns: repeat(3, 1fr);</pre>
+        </article>
+        <article class="html attributes wide"><!--wievport-->
+            <h2>Responsive Web Design</h2>
+            <pre>&lt;meta name="viewport" content="width=device-width; initial-scale=1.0"&gt;</pre>
+            <p>Flexible images and media (CSS)</p>
+            <pre>max-width: 100%;</pre>
+            <p>Media queries (CSS)</p>
+            <pre>@media screen and (min-width: 800px)</pre>
+        </article>
+
+        <article class="fixed">
+            <h2>Don't go down there.. It is just some CSS and HTML </h2>
+        </article>
+
+        <article class="html tags tall"> <!--table-->
+            <h2>Tables</h2>
+            <pre>&lt;table&gt;<br> &lt;caption&gt;Information about tables&lt;/caption&gt;<br> &lt;tr&gt;<br>  &lt;th&gt;Table header&lt;/th&gt;<br> &lt;/tr&gt;<br> &lt;tr&gt;<br>  &lt;td&gt;Table data&lt;/td&gt;<br> &lt;/tr&gt;<br>&lt;/table&gt;</pre>
+            <div class="program">
+                <h2>Create tables</h2><!--create table-->
+                <form>
+                    <label for="caption">Caption <br>
+                        <input type="text" id="caption" name="captionsinput"> 
+                    </label><br>
+                    <label for="rows">Rows  <br>
+                        <input type="number" id="rows" name="rowsinput"> 
+                    </label><br>
+                    <label for="cols">Cols <br>
+                        <input type="number" id="cols" name="colsinput"> 
+                    </label><br>
+                    <button type="button" id="createTableNow">Make a table</button>
+                    <button type="button" id="deleteTable">Reset</button>
+                </form>
+                <pre id="createTablePlaceholder"></pre>
+            </div>
+        </article>
+
+        <article class="html tags tall"> <!--list-->
+            <h2>Lists</h2>
+            <p>Ordered list <br>A list with numbers</p>
+            <pre>&lt;ol&gt;<br> &lt;li&gt;A list point&lt;/li&gt;<br> &lt;li&gt;A list point&lt;/li&gt;<br>&lt;/ol&gt;</pre>
+            <p>Unordered lists <br>A list with dots</p>
+            <pre>&lt;ul&gt;<br> &lt;li&gt;A list &lt;/li&gt;<br> &lt;li&gt;A list &lt;/li&gt;<br>&lt;/ul&gt;</pre>
+            <div class="program"> <!--create list-->
+                <h2>Create lists</h2>
+                <form>
+                    <label for="ordredList">
+                        <input type="radio" id="ordredList" name="listType" value="ol"> Ordered list
+                    </label><br>
+                    <label for="unordredList">
+                        <input type="radio" id="unordredList" name="listType" value="ul"> Unordered lists
+                    </label><br>
+                    <label for="listNumber">How many listpoints? <br>
+                        <input type="number" id="listNumber" name="listNumber"> 
+                    </label><br>
+                    <button type="button" id="createListsNow">Make a list</button>
+                    <button type="button" id="deleteList">Reset</button>
+                </form>
+                <pre id="createListPlaceholder"></pre>
+            </div>
+        </article>
+        <article class="css tall">
+            <h2>Flexbox</h2>
+            <pre>display: flex;</pre>
+            <p>Flex direction</p>
+            <pre>flex-direction: column | column-reverse | row | row-reverse;</pre>
+            <p>Justify-content</p>
+            <pre>justify-content: flex-start | flex-end | center | space-around | space-between | space-evenly;</pre>
+            <p>Align elements</p>
+            <pre>align-items: flex-start | flex-end | center | baseline | stretch;</pre>
+        </article>
+        <article class="html attributes tall"> <!--attributes-->
+            <h2>Global attributes</h2>
+            <p>Attributes must be written in lowercase</p>
+            <pre>&lt;tag lang="da-DK"&gt;</pre>
+            <pre>&lt;tag charset="UTF-8" &gt;</pre>
+            <pre>&lt;tag alt="description"&gt;</pre>
+            <pre>&lt;tag style="height:200px;"&gt;</pre>
+            <pre>&lt;tag id="idName"&gt;</pre>
+            <pre>&lt;tag class="className"&gt;</pre>
+            <pre>&lt;tag title="more information"&gt;</pre>
+        </article>
+        <article class="html attributes"><!--font awesome-->
+            <h2>Font awesome</h2>
+            <p>Link in head</p>
+            <pre>&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"&gt;</pre>
+            <p>Shortcode</p>
+            <pre>&lt;i class="fas fa-camera"&gt; &lt;/i&gt;</pre>
+        </article>
+        <article class="html attributes"><!--links-->
+            <h2>Links</h2> 
+            <pre>&lt;a href="path-to-file.html" target="_blank"&gt;Link&lt;a&gt;</pre>
+            <pre>&lt;a href="mailto:rdis@iba.dk"&gt; rdis@iba.dk&lt;a&gt;</pre>
+            <pre>&lt;a href="telto:00000000"&gt;00 00 00 00&lt;a&gt;</pre>
+            <pre>&lt;a href="https://example.com/" rel="nofollow"&gt;A site&lt;a&gt;</pre>
+        </article>
+        <article class="program"> <!--Validator-->
+            <h2>Validators</h2>
+            <a href="https://validator.w3.org/" target="_blank" alt="HTML validators">HTML validators</a><br>
+            <a href="https://jigsaw.w3.org/css-validator/" target="_blank" alt="CSS validators">CSS validators</a> <br>
+            <a href="https://developers.google.com/speed/pagespeed/insights/" target="_blank" alt="Pagespeed">Page speed</a> <br>
+            <a href="https://www.xml-sitemaps.com/" target="_blank" alt="Sitemap">Sitemap</a> <br>
+            <a href="https://wave.webaim.org/" target="_blank" alt="Wave">Wave</a> <br>
+        </article>
+        <article class="css tall"><!--position-->
+            <h2>Layout</h2>
+            <p>Display</p>
+            <pre>display: block | inline-block | inline | flex | grid</pre>
+            <p>Position</p>
+            <pre>position: static | relative | absolute | fixed | sticky</pre>
+            <p>Float</p>
+            <pre>float: left | right | none | inline-start | inline-end</pre>
+            <p>Clear float</p>
+            <pre>clear: both;</pre>
+        </article>
+        <article class="css"> <!--change fonts-->
+            <h2>Font</h2>
+            <p>Change the size</p>
+            <pre>font-size: 14px;</pre>
+            <p>Change the family</p>
+            <pre>font-family: Georgia, serif;</pre>
+        </article>
+        <article class="html tags tall"> <!--paragrahps-->                
+            <h2>Paragraphs</h2>
+            <p>Line break</p>
+            <pre>&lt;br&gt;</pre>
+            <p>Normal paragraph</p>
+            <pre>&lt;p&gt;Normal paragraph&lt;/p&gt;</pre>
+            <p>Bold paragraph</p>
+            <pre>&lt;p&gt;&lt;b&gt;Bold paragraph&lt;/b&gt;&lt;/p&gt;</pre>
+            <p>Mark a text</p>
+            <pre>&lt;p&gt;Normal paragraph&lt;mark&gt;with a mark&lt;/mark&gt;&lt;/p&gt;</pre>
+        </article>
+        <article class="css tall"><!--Colors-->
+            <h2>Colors</h2>
+            <pre>color: blue; /* change the color of the element */</pre>
+            <pre>background-color: blue; /* change the background color of the element */</pre>
+            <p>Name</p>
+            <p>IndianRed</p>
+            <p>Hex color</p>
+            <pre>#CD5C5C</pre>
+            <p>RGB code</p>
+            <pre>rgb(205, 92, 92)</pre>
+            <p>RGBA code</p>
+            <pre>rgb(205, 92, 92, 0.5)</pre>
+        </article>
+        <article class="html tags"><!--Comments-->
+            <h2>Comments</h2>
+            <pre>&lt;!--HTML comments--&gt;</pre>
+            <pre>/* CSS comments */</pre>
+            <pre>/* JS comments */</pre>
+            <pre>// Single JS comments</pre>
+        </article>
+        <article class="css"><!--Image-->
+            <h2>Background image</h2>
+            <pre>background-image: url(img/unsplash.jpg);</pre>
+            <pre>background-position: center;</pre>
+            <pre>background-size: cover;</pre>
+            <pre>background-attachment: fixed;</pre>
+            <pre>min-height: 200px;</pre>
+        </article>
+        <article class="html tags"> <!--Image-->
+            <h2>Image</h2>
+            <pre>&lt;img src="/demo.jpg" alt="description about the img" title="Extra info about the img" width="100" height="48" /&gt;</pre>
+        </article>
+        <article class="html tags"> <!--Heading-->
+            <h2>Heading</h2>
+            <pre>&lt;h1&gt;Heading 1&lt;/h1&gt;</pre>
+            <pre>&lt;h2&gt;Heading 2&lt;/h2&gt;</pre>
+            <pre>&lt;h2&gt;Heading 2&lt;/h2&gt;</pre>
+            <pre>&lt;h6&gt;Heading 6&lt;/h6&gt;</pre>
+        </article>
+        <article class="html markup">
+            <h2>Nav</h2>  <!--NAv-->
+            <p>The nav element defines the main navigation links. It represents a group of navigation links.</p>
+            <pre>&lt;nav&gt; ... &lt;/nav&gt;</pre>
+        </article>
+        <article class="html markup">
+            <h2>Main</h2>  <!--Main-->
+            <p>The main element specifies the main content of a document.</p>
+            <pre>&lt;main&gt; ... &lt;/main&gt;</pre>
+        </article>
+        <article class="html markup">
+            <h2>Footer</h2>  <!--Footer-->
+            <p>The footer element defines a footer for a document or section</p>
+            <pre>&lt;footer&gt; ... &lt;/footer&gt;</pre>
+        </article>
+        <article class="html markup">
+            <h2>Header</h2>  <!--Header-->
+            <p>Used for introduction content or a navigation</p>
+            <pre>&lt;header&gt; ... &lt;/header&gt;</pre>
+        </article>
+        <article class="markup html"> <!--section-->
+            <h2>Section</h2>
+            <p>Defines a section on the web page. There must always be a heading inside</p>
+            <pre>&lt;section&gt; ... &lt;/section&gt;</pre>
+        </article>
+        <article class="html attributes wide tall"><!--link-->
+            <h2>Link to documents</h2>
+            <p>CSS doucument</p>
+            <pre>&lt;link rel="stylesheet" href="css/style.css" type="text/css"&gt;</pre>
+            <p>A file</p>
+            <pre>&lt;a href="path-to-file.html"&gt;Name&lt;/a&gt;</pre>
+            <p>A file in a folder</p>
+            <pre>&lt;a href="../path-to-file.html"&gt;Name&lt;/a&gt;</pre>
+            <p>Another site</p>
+            <pre>&lt;a href="https://www.google.com"&gt;Google&lt;/a&gt;</pre>
+        </article>
+        <article class="html markup"> <!--article-->
+            <h2>Article</h2>
+            <p>Specifies independent, self-contained content.</p>
+            <pre>&lt;article&gt; ... &lt;/article&gt;</pre>
+        </article>
+        <article class="html HTMLelements tags wide"><!--Tags-->
+            <h2>HTML characters</h2>
+            <code>&lt;<br>&amp;lt;</code>
+            <code>&gt;<br>&amp;gt;</code>
+            <code>&amp;<br>&amp;amp;</code>
+            <code>&phone;<br>&amp;phone;</code>
+            <code>&#10084;<br>&amp;#10084;</code>
+            <code>&#128578;<br>&amp;#128578;</code>
+            <code>&copy;<br>&amp;copy;</code>
+            <code>&hearts;<br>&amp;hearts;</code>
+            <code>&#9804;<br>&amp;#9804;</code>
+            <code>&#9889;<br>&amp;#9889;</code>
+            <code>&#127756;<br>&amp;#127756;</code>
+            <code>&#127773;<br>&amp;#127773;</code>
+            <code>&#128013;<br>&amp;#128013;</code>
+        </article>
+
+    </main>
+    <footer><p>&copy;2021</p></footer>
+    
+    <script src="js/myscript.js"></script>
+    <script src="js/sortOut.js"></script>
+</body>
+</html>
