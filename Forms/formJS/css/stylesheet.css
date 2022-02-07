@@ -1,0 +1,84 @@
+/*---------------
+    Generel
+----------------*/
+body {
+    height: 100%;
+    font-size:16px;
+    font-family: 'helvetica', sans-serif, serif;
+    background: linear-gradient(#FF9190, #FEC196) no-repeat;
+}
+header,nav,main,section,article,footer{
+    width:100%;
+    max-width:100%;
+}
+html {
+    overflow-y: scroll;
+}
+main{
+    width: 90%;
+    margin: 0 auto;
+    min-height: 100vh;
+    height: 100%;
+}
+/*---------------
+    inside main
+----------------*/
+
+article, div{
+    width:49%;
+    float:left;
+}
+
+/*---------------
+    Form
+    Input
+----------------*/
+form{
+    display: grid;
+    width:60%;
+    font-size: 16px;
+}
+fieldset{
+    border: none;
+    display: grid;
+    padding:0;
+}
+
+input[type=text], input[type=radio],input[type=checkbox], textarea, select {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid lightgray;
+}
+button{
+    width: 100%;
+    padding: 3%;
+    margin: 2% 0;
+    cursor: pointer;
+    background-color: #31AFD5;
+    color:white;
+    border: none;
+}
+    button[type=reset]{
+        background-color: rgb(49, 175, 213, .5);
+    }
+
+/*---------------
+    SVG
+----------------*/
+
+.tattos,.sunGlasses,.glasses,.hat,.neckless,.male,.female{
+    display:none;
+}
+svg{
+    width: 50%;
+}
+.avatarBody, .eyes{
+    fill:#FFFFFF;
+    stroke:#000000;
+    stroke-miterlimit:10;
+}
+
+                .st1{fill:none;stroke:#000000;stroke-miterlimit:10;}
+                .st2{display:none;}
+                .st3{display:inline;fill:none;stroke:#000000;stroke-miterlimit:10;}
+                .st4{display:inline;}

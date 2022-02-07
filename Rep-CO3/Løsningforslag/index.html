@@ -6,14 +6,14 @@
 		<meta name="description" content="Something something so the site can be found on Google">
 		<title>FC Midtjylland</title>
 		<link href="images/logo.png" rel="icon" type="image/png">
-		<link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+		<link href="css/stylesheet2.css" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
 	</head>
 	
 	<body>
 		<header>
+            <a href="index.html" title="FC Midtjylland"><img src="images/logo.png"></a>
 			<nav>
-                <a href="index.html" title="FC Midtjylland"><img src="images/logo.png"></a>
                 <ul>
                     <li><a href="#" title="Om FCM" class="active">Om FCM</a></li>
                     <li><a href="#" title="Bibliotek">Bibliotek</a></li>
@@ -35,8 +35,8 @@
 		</header>
 		<main>
             <!--Menu-->
-			<section>
-                <nav><ul>
+            <nav>
+                <ul>
                     <li><a href="#" title="Om FCM" class="active2">Om FCM</a></li>
                     <li><a href="#" title="Administration">Administration</a></li>
                     <li><a href="#" title="Bestyrelse">Bestyrelse</a></li>
@@ -44,19 +44,17 @@
                     <li><a href="#" title="CSR">CSR</a></li>
                     <li><a href="#" title="Stadion">Stadion</a></li>
                     <li><a href="#" title="BW">BW</a></li>
-                </ul></nav>
-                </section>
-            <!--Brødkrummesti-->
-                <section>
-                    <p class="breadCrumbs">Du er her: <a href="#" title="Forside">Forside</a> / <a href="index.html" title="om FC Midtjylland">Om FCM</a>/ </p>
-                </section>
-            <!--Overskrift og rubrik-->
-            <section>
+                </ul>
+            </nav>
+            <section class="intro">
+                <!--Breadcrumbs-->
+                <p class="intro-breadCrumbs">Du er her: <a href="#" title="Forside">Forside</a> &#47; <a href="index.html" title="om FC Midtjylland">Om FCM</a> &#47; </p>
+                <!--about heading-->
                 <h1>FC Midtjylland</h1>
                 <p>Cras mattis iudidium prurs sit amet fermentum. Ab illo tempor, ab est sed immemorabili. Quo useque tandem abutere, Catilina, patentia nostra.</p>
             </section>
 
-            <!--Overskrift og tekst-->
+            <!--history-->
             <section>
                 <h2>Historie</h2>
                 <p>1. juli 1999 blev dagen, hvor Midt- og Vestjyllands nye storklub blev født. FC Midtjylland blev navnet på den ambitiøse sammenslutning, som i fremtiden skulle udfordre toppen af dansk fodbold og være flagskibet for en driftig og engageret region.</p>
@@ -65,49 +63,46 @@
                 </p>
             </section>
 
-            <!-- billede -->
-            <section>
-                <div>
-                    <img src="images/logo_mark.png" alt="FC Midtjylland" title="FCM holdet"/>
-                </div>
-            </section>
+            <!-- image og the logo -->
+            <div class="div-logo">
+                <img src="images/logo_mark.png" alt="FC Midtjylland logo oven på en mark"/>
+            </div>
 
              <!-- værdier --> 
-            <section>
+            <article class="values">
                 <h2>VORES VÆRDIER</h2>
                 <div>
-                    <div>
+                    <article>
                         <h3>GLÆDEN</h3>
                         <p>Med PASSION engagerer vi os i FC Midtjylland<br>BEGEJSTRING er drivkraften<br>Med MOTIVATION skaber vi resultater<br><span class="redText">Vi dyrker glæde</span></p>
-                    </div>
-                    <div>
+                    </article>
+                    <article>
                         <h3>VILJEN</h3>
                         <p>STÆBSOMT går vi konstant efter at blive bedre<br>Med VEDHOLDENHED følger vi vores mål<br>ÆRGERRIGT jagter vi vores drømme<br><span class="redText">Vi dyrker viljen</span></p>
-                    </div>
+                    </article>
                 </div>
                 <div>
-                    <div>
+                    <article>
                         <h3>MODET</h3>
                         <p>Vi er altid UDFORDERENDE<br>Vi er AMITØSE og tør sætte os høhe mål<br>VI er NYTÆNKENDE og tør gå egne veje<br><span class="redText">Vi dyrker modet</span></p>
-                    </div>
-                    <div>
+                    </article>
+                    <article>
                         <h3>RØDDERNE</h3>
                         <p>FC Midtjylland er et regionalt FÆLLESSKAB<br>Vi dyrker SAMMENHOLDET i talent arbejdet, forenings- og erhvervslivet<br>SAMMEN tager vi et socialt ansvar<br><span class="redText">Vi dyrker rødderme</span></p>
-                    </div>
+                    </article>
                 </div>
+            </article>
+        </main>
 
-            </section>
-
-            <!-- sponsor -->
-            <section>
+        <footer> 
+             <!-- sponsor -->
+             <div class="div-sponsor">
                 <img src="images/logoBRFkredit.png" alt="BRF kredit" width="133" height="25" title="BrF Kredit"/> 
                 <img src="images/logojyskebank.png" alt="Jydske Bank" width="170" height="20" title="Jydske Bank"/>
                 <img src="images/logosportmaster.png" alt=" SportsMaster" width="170" height="18" title="Sportsmaster"/>
                 <img src="images/logoMCH.png" alt="MCH" width="125" height="45" class="mch" title="MCH"/>
-            </section>
-        </main>
+            </div>
 
-        <footer> 
             <nav>
                 <h4>SUPERLIGAEN</h4>
                 <ul>
@@ -158,9 +153,9 @@
                     <li><a href="#" title="Sponsor">Sponsor</a></li>
                 </ul>
             </nav>
-            <div>
+            <div class="footer-text">
                 <p>DYRK GLÆDERN, VILJEN<br>MODET &amp; RØDDERNE</p>
-                <p><span>SAMMEN</span> DYRKER VI DRØMMEN</p>
+                <p><span>SAMMEN</span> DYRKER VI <br>DRØMMEN</p>
 
                 <nav>
                     <ul>

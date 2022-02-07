@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Build an avatar</h1>
+    </header>
+    <main>
+        <article>
+            <form action="#" method="post">
+                <label>Avatar name <br>
+                    <input type="text" name="name">
+                </label>
+
+                <fieldset>
+                    <legend>Avatar gender*</legend>
+                    <label>
+                        <input type="radio" name="gender" value="male" required>
+                        Male
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="female">
+                        Female
+                    </label>
+                </fieldset>
+
+                <label>Avatar color <br>
+                    <select name="color">
+                        <option disabled selected>Choose an option</option>
+                        <option value="lightblue">Blue</option>
+                        <option value="pink">Pink</option>
+                        <option value="yellow">Yellow</option>
+                        <option value="purple">Purple</option>
+                        <option value="Green">Green</option>
+                    </select>
+                </label>
+                
+                <label>Background story <br>
+                    <textarea name="bgStory"></textarea>
+                </label>
+
+                <fieldset class="fieldset-accessories">
+                    <legend>Accessories</legend>
+                    <label>
+                        <input type="checkbox" name="accessories" value="glasses">
+                        Glasses
+                    </label>
+                    <label>
+                        <input type="checkbox" name="accessories" value="hat">
+                        Hat
+                    </label>
+                    <label>
+                        <input type="checkbox" name="accessories" value="tattos">
+                        Tattos
+                    </label>
+                    <label>
+                        <input type="checkbox" name="accessories" value="neckless">
+                        Neckless
+                    </label>
+                    <label>
+                        <input type="checkbox" name="accessories" value="sunGlasses">
+                        Sunglasses
+                    </label>
+                </fieldset>
+
+                <button type="button" id="send">Make avatar</button>
+                <button type="reset" id="reset">Reset avatar</button>
+
+            </form>
+        </article>
+    
+        <div id="avatar">  <!--avatar-->   
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 262.8 447.85" >
+                <g class="avatar">
+                    <!--body-->
+                    <path class="avatarBody" d="M253.26,296.88c0,73.16-11.33,132.46-25.31,132.46c-7.57,0-14.36-17.35-18.99-44.86
+                        c-4.64,27.51-11.43,44.86-18.99,44.86c-6.9,0-13.16-14.44-17.72-37.88c-3.9,22.82-11.13,38.05-17.72,37.88
+                        c-7.89-0.2-13.38-22.45-14.11-25.5c-1.7,14.07-6.19,25.09-11.21,25.5c-5.48,0.44-12.75-11.66-16.13-30.4
+                        c-1.89,7.08-8.55,30.65-16.15,30.4c-9.8-0.33-15.21-40.09-15.7-43.88c-5.72,29.32-11.24,43.95-16.58,43.88
+                        c-3.89-0.05-7.68-7.91-11.36-23.58c-5.87,19.15-10.55,23.66-13.95,23.58c-13.58-0.32-25.32-74.23-25.32-132.46
+                        c0-57.41,6.98-106.29,16.75-124.67C45.05,109.32,86.28,63.88,134.91,63.88c51.93,0,95.41,51.82,106.66,121.35
+                        C248.6,208.76,253.26,249.97,253.26,296.88z"/>
+                    <!--left eyes-->
+                    <ellipse class="eyes" cx="102.15" cy="164.53" rx="12.58" ry="20.24"/>
+                    <ellipse transform="matrix(0.0913 -0.9958 0.9958 0.0913 -77.9352 260.1821)" cx="103.6" cy="172.79" rx="12" ry="8.89"/>
+                    <!--right eyes-->
+                    <ellipse class="eyes" cx="160.31" cy="164.53" rx="12.58" ry="20.24"/>
+                    <ellipse transform="matrix(0.0913 -0.9958 0.9958 0.0913 -25.0919 318.0919)" cx="161.75" cy="172.79" rx="12" ry="8.89"/>
+                    <!--mouth-->
+                    <path class="st1" d="M109.82,200.29c3.38,2.17,11.48,6.73,22.78,7c12.52,0.3,21.54-4.86,24.87-7"/>
+                </g>
+                <g class="male">
+                    <!--hair-->
+                    <line class="st3" x1="128.08" y1="63.88" x2="106.4" y2="42.2"/>
+                    <line class="st3" x1="129.89" y1="63.88" x2="151.56" y2="42.2"/>
+                    <line class="st3" x1="128.98" y1="64.84" x2="128.98" y2="42.91"/>
+                </g>
+                <g class="female">
+                    <line class="st1" x1="102.15" y1="144.29" x2="102.15" y2="135.61"/>
+                    <line class="st1" x1="98.91" y1="145.23" x2="92.77" y2="139.09"/>
+                    <line class="st1" x1="100.1" y1="144.07" x2="97.39" y2="135.83"/>
+                    <line class="st1" x1="161.07" y1="144.29" x2="161.07" y2="135.61"/>
+                    <line class="st1" x1="165.67" y1="145.89" x2="171.81" y2="139.75"/>
+                    <line class="st1" x1="163.4" y1="145.24" x2="167.74" y2="137.72"/>
+                </g>
+                <g class="neckless">
+                    <path class="st1" d="M17.67,228.37c16.17,10.35,57.73,33.93,115.84,34.14c58.19,0.21,99.97-23.12,116.2-33.36"/>
+                    <circle class="st1" cx="133.68" cy="266.76" r="4.25"/>
+                </g>
+                <g class="hat">
+                    <line class="st1" x1="213.81" y1="74.68" x2="42.58" y2="74.68"/>
+                    <path d="M166.7,12.49H97.98c-3.7,0-6.7,3-6.7,6.7v55.48h82.12V19.19C173.4,15.49,170.4,12.49,166.7,12.49z"/>                
+                </g>
+                <g class="glasses">
+                    <circle class="st1" cx="171.89" cy="156.21" r="35.85"/>
+                    <circle class="st1" cx="99.74" cy="156.21" r="35.85"/>
+                    <line class="st1" x1="63.89" y1="152.54" x2="39.3" y2="144.29"/>
+                    <line class="st1" x1="207.74" y1="156.21" x2="232.07" y2="148.42"/>
+                </g>
+                <g class="sunGlasses">
+                    <circle cx="171.79" cy="156.21" r="35.85"/>
+                    <circle cx="99.65" cy="156.21" r="35.85"/>
+                    <line class="st1" x1="63.8" y1="152.54" x2="39.2" y2="144.29"/>
+                    <line class="st1" x1="207.64" y1="156.21" x2="231.98" y2="148.42"/>
+                </g>
+                <g class="tattos">
+                    <path d="M69.12,296.89c0,3.13-1.5,5.92-3.82,7.68l-4.83,5.69l-7.13,8.4l-7.12-8.4l-4.8-5.66l-0.02-0.01
+                        c-2.33-1.76-3.84-4.55-3.84-7.69c0-5.31,4.3-9.62,9.62-9.62c2.34,0,4.49,0.84,6.16,2.23c1.67-1.39,3.81-2.23,6.15-2.23
+                        C64.81,287.27,69.12,291.58,69.12,296.89z"/>
+                </g>
+            </svg>
+            <h2 class="name">Make an avatar</h2>
+            <p class="bgStory"></p>
+        </div>
+    </main>
+    <script src="assets/main.js"></script>
+</body>
+</html>

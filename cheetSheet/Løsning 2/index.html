@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="This site is a guide about HTML, CSS and JavaScript">
     <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+    <script src="js/myscript.js" defer></script>
+    <script src="js/sortOut.js" defer></script>
     <link href="image/favicon.png" rel="icon" type="image/png">
     <title>Cheat Sheet</title>
 </head>
@@ -17,8 +19,9 @@
             <button>All</button>
             <button>HTML</button>
             <button>CSS</button>
-            <button>JS</button>
             <button>SEO</button>
+            <button>GIT</button>
+            <button>JS</button>
             <button>Program</button>
        </div>
     </header>
@@ -128,7 +131,7 @@
             <pre>'use strict';</pre>
             <pre>console.log();</pre>
         </article>
-        <article class="html attributes wide"><!--link-->
+        <article class="html wide"><!--link-->
             <h2>JavaScript link</h2>
             <pre>&lt;script type="text/javascript" src="path-to-javascript-file.js"&gt;&lt;/script&gt;</pre>
         </article>
@@ -136,7 +139,15 @@
         <article class="fixed">
             <h2>Lets start with some JavaScript</h2>
         </article>
+        <article class="tech">
+            <h2>GIT</h2>
+        </article>
+<!--TECH-->
+        <article></article>
 
+
+
+<!--HTML-->
         <article class="seo wide"> <!--seo-->
             <h2>Meta data</h2>
             <p>Description</p>
@@ -149,23 +160,6 @@
             <p>Allow everything</p>
             <pre>User-agent: *<br> Allow: /</pre>
         </article>
-        <article class="page"><!--page-->
-            <h2>Free trial page</h2>
-            <p>The main goal to a free trial page is to get someone into your sign up flow.</p>
-        </article>
-        <article class="page"><!--page-->
-            <h2>Sales page</h2>
-            <p>Sales pages are used to sell online courses, one-on-one training, event tickets and so on.</p>
-        </article>
-        <article class="page"><!--page-->
-            <h2>Email signup</h2>
-            <p>Is a page where you can collect emails in exchange for a ebook, report og newsletter.</p>
-        </article>
-        <article class="page"><!--page-->
-            <h2>Landing page</h2>
-            <p>A landing page are designed to do a single action, such as making a purchase, 
-                filling out a form, signing up for a free trial og entering an email address.<br>A landing page have focus on ONE thing.</p>
-        </article>
         <article class="css"><!--Transform-->
             <h2>Transform</h2>
             <p>Rotate</p>
@@ -173,7 +167,7 @@
             <p>Scale</p>
             <pre>transform: scale(1.4, 1.4);</pre>
         </article>
-        <article class="html tags wide"><!--Video-->
+        <article class="html wide"><!--Video-->
             <h2>Video</h2>
             <pre>&lt;video width="320" height="240" controls&gt;</pre>
             <pre>   &lt;source src="movie.mp4" type="video/mp4"&gt;</pre>
@@ -208,7 +202,7 @@
 
         </article>
   
-        <article class="css attributes wide"><!--wievport-->
+        <article class="css wide"><!--wievport-->
             <h2>Responsive Web Design</h2>
             <pre>&lt;meta name="viewport" content="width=device-width; initial-scale=1.0"&gt;</pre>
             <p>Flexible images and media (CSS)</p>
@@ -221,7 +215,7 @@
             <h2>Don't go down there.. It is just some CSS and HTML </h2>
         </article>
 
-        <article class="html tags tall"> <!--table-->
+        <article class="html tall"> <!--table-->
             <h2>Tables</h2>
             <pre>&lt;table&gt;<br> &lt;caption&gt;Information about tables&lt;/caption&gt;<br> &lt;tr&gt;<br>  &lt;th&gt;Table header&lt;/th&gt;<br> &lt;/tr&gt;<br> &lt;tr&gt;<br>  &lt;td&gt;Table data&lt;/td&gt;<br> &lt;/tr&gt;<br>&lt;/table&gt;</pre>
             <div class="program">
@@ -243,7 +237,7 @@
             </div>
         </article>
 
-        <article class="html tags tall"> <!--list-->
+        <article class="html tall"> <!--list-->
             <h2>Lists</h2>
             <p>Ordered list <br>A list with numbers</p>
             <pre>&lt;ol&gt;<br> &lt;li&gt;A list point&lt;/li&gt;<br> &lt;li&gt;A list point&lt;/li&gt;<br>&lt;/ol&gt;</pre>
@@ -269,9 +263,15 @@
         </article>
         <article class="program">
             <h2>Games</h2>
-            <a href="https://flukeout.github.io/#" target="_blank">CSS selectors</a><br>
-            <a href="https://flexboxfroggy.com/#da" target="_blank">CSS flexbox</a><br>
-            <a href="https://cssgridgarden.com/" target="_blank">CSS grid</a><br>
+            <nav>
+                <ul>
+                    <li><a href="https://flukeout.github.io/#" target="_blank">CSS selectors</a></li>
+                    <li><a href="https://flexboxfroggy.com/#da" target="_blank">CSS flexbox</a></li>
+                    <li><a href="https://cssgridgarden.com/" target="_blank">CSS grid</a></li>
+                    <li><a href="https://www.codecademy.com/learn" target="_blank">Codecademy</a></li>
+                </ul>
+            </nav>
+
         </article>
         <article class="css tall"><!--flex box-->
             <h2>Flexbox</h2>
@@ -285,7 +285,7 @@
         </article>
 
         <!--here it stop-->
-        <article class="html attributes tall"> <!--attributes-->
+        <article class="html tall"> <!--attributes-->
             <h2>Global attributes</h2>
             <p>Attributes must be written in lowercase</p>
             <pre>&lt;tag lang="da-DK"&gt;</pre>
@@ -296,14 +296,14 @@
             <pre>&lt;tag class="className"&gt;</pre>
             <pre>&lt;tag title="more information"&gt;</pre>
         </article>
-        <article class="html attributes"><!--font awesome-->
+        <article class="html"><!--font awesome-->
             <h2>Font awesome</h2>
             <p>Link in head</p>
             <pre>&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"&gt;</pre>
             <p>Shortcode</p>
             <pre>&lt;i class="fas fa-camera"&gt; &lt;/i&gt;</pre>
         </article>
-        <article class="html attributes"><!--links-->
+        <article class="html"><!--links-->
             <h2>Links</h2> 
             <pre>&lt;a href="path-to-file.html" target="_blank"&gt;Link&lt;a&gt;</pre>
             <pre>&lt;a href="mailto:rdis@iba.dk"&gt; rdis@iba.dk&lt;a&gt;</pre>
@@ -312,11 +312,18 @@
         </article>
         <article class="program"> <!--Validator-->
             <h2>Validators</h2>
-            <a href="https://validator.w3.org/" target="_blank" alt="HTML validators">HTML validators</a><br>
-            <a href="https://jigsaw.w3.org/css-validator/" target="_blank" alt="CSS validators">CSS validators</a> <br>
-            <a href="https://developers.google.com/speed/pagespeed/insights/" target="_blank" alt="Pagespeed">Page speed</a> <br>
-            <a href="https://www.xml-sitemaps.com/" target="_blank" alt="Sitemap">Sitemap</a> <br>
-            <a href="https://wave.webaim.org/" target="_blank" alt="Wave">Wave</a> <br>
+                <nav>
+                    <ul>
+                        <li><a href="https://validator.w3.org/" target="_blank" title="HTML validators">HTML validators</a></li>
+                        <li><a href="https://jigsaw.w3.org/css-validator/" target="_blank" title="CSS validators">CSS validators</a></li>
+                        <li><a href="https://developers.google.com/speed/pagespeed/insights/" target="_blank" title="Pagespeed">Lighthouse</a></li>
+                        <li><a href="https://whocanuse.com/" target="_blank">Who can use</a></li>
+                        <li><a href="https://wave.webaim.org/" target="_blank" title="Wave">Wave</a></li>
+                        <li><a href="https://accessibe.com/ace" target="_blank">Accessibe</a></li>
+                        <li><a href="https://www.makeuseof.com/tag/3-easytouse-online-colorblindness-simulators/" target="_blank">Colorblindness simulators</a></li>
+                        <li><a href="https://www.xml-sitemaps.com/" target="_blank" title="Sitemap">Sitemap</a></li>
+                    </ul>
+                </nav>
         </article>
         <article class="css tall"><!--position-->
             <h2>Layout</h2>
@@ -336,7 +343,7 @@
             <p>Change the family</p>
             <pre>font-family: Georgia, serif;</pre>
         </article>
-        <article class="html tags tall"> <!--paragrahps-->                
+        <article class="html tall"> <!--paragrahps-->                
             <h2>Paragraphs</h2>
             <p>Line break</p>
             <pre>&lt;br&gt;</pre>
@@ -360,7 +367,7 @@
             <p>RGBA code</p>
             <pre>rgb(205, 92, 92, 0.5)</pre>
         </article>
-        <article class="html tags"><!--Comments-->
+        <article class="html"><!--Comments-->
             <h2>Comments</h2>
             <pre>&lt;!--HTML comments--&gt;</pre>
             <pre>/* CSS comments */</pre>
@@ -375,11 +382,11 @@
             <pre>background-attachment: fixed;</pre>
             <pre>min-height: 200px;</pre>
         </article>
-        <article class="html tags"> <!--Image-->
+        <article class="html"> <!--Image-->
             <h2>Image</h2>
             <pre>&lt;img src="/demo.jpg" alt="description about the img" title="Extra info about the img" width="100" height="48" /&gt;</pre>
         </article>
-        <article class="html tags"> <!--Heading-->
+        <article class="html"> <!--Heading-->
             <h2>Heading</h2>
             <pre>&lt;h1&gt;Heading 1&lt;/h1&gt;</pre>
             <pre>&lt;h2&gt;Heading 2&lt;/h2&gt;</pre>
@@ -411,7 +418,7 @@
             <p>Defines a section on the web page. There must always be a heading inside</p>
             <pre>&lt;section&gt; ... &lt;/section&gt;</pre>
         </article>
-        <article class="html attributes wide tall"><!--link-->
+        <article class="html wide tall"><!--link-->
             <h2>Link to documents</h2>
             <p>CSS doucument</p>
             <pre>&lt;link rel="stylesheet" href="css/style.css" type="text/css"&gt;</pre>
@@ -427,7 +434,7 @@
             <p>Specifies independent, self-contained content.</p>
             <pre>&lt;article&gt; ... &lt;/article&gt;</pre>
         </article>
-        <article class="html HTMLelements tags wide"><!--Tags-->
+        <article class="html HTMLelements wide"><!--Tags-->
             <h2>HTML characters</h2>
             <code>&lt;<br>&amp;lt;</code>
             <code>&gt;<br>&amp;gt;</code>
@@ -446,8 +453,6 @@
 
     </main>
     <footer><p>&copy;2021</p></footer>
-    
-    <script src="js/myscript.js"></script>
-    <script src="js/sortOut.js"></script>
+
 </body>
 </html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Build an avatar</h1>
+    </header>
+    <main>
+        <article>
+            <form action="#" method="post">
+                <label>Avatar name <br>
+                    <input type="text" name="name">
+                </label>
+
+                <fieldset>
+                    <legend>Avatar gender*</legend>
+                    <label>
+                        <input type="radio" name="gender" value="male" required>
+                        Male
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="female">
+                        Female
+                    </label>
+                </fieldset>
+
+                <label>Avatar color <br>
+                    <select name="color">
+                        <option disabled selected>Choose an option</option>
+                        <option value="lightblue">Blue</option>
+                        <option value="pink">Pink</option>
+                        <option value="yellow">Yellow</option>
+                        <option value="purple">Purple</option>
+                        <option value="Green">Green</option>
+                    </select>
+                </label>
+                
+                <label>Background story <br>
+                    <textarea name="bgStory"></textarea>
+                </label>
+
+                <fieldset class="fieldset-accessories">
+                    <legend>Accessories</legend>
+                    <label>
+                        <input type="checkbox" name="accessories" value="glasses">
+                        Glasses
+                    </label>
+                    <label>
+                        <input type="checkbox" name="accessories" value="hat">
+                        Hat
+                    </label>
+                    <label>
+                        <input type="checkbox" name="accessories" value="tattos">
+                        Tattos
+                    </label>
+                    <label>
+                        <input type="checkbox" name="accessories" value="neckless">
+                        Neckless
+                    </label>
+                    <label>
+                        <input type="checkbox" name="accessories" value="sunGlasses">
+                        Sunglasses
+                    </label>
+                </fieldset>
+
+                <button type="button" id="send">Make avatar</button>
+                <button type="reset" id="reset">Reset avatar</button>
+
+            </form>
+        </article>
+    </main>
+</body>
+</html>

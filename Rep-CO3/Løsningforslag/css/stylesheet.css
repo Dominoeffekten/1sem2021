@@ -14,18 +14,17 @@ html, body {
     margin: 0;
 }
 main,header,nav,section,article,footer{
-	width:100%;
 	max-width:100%;
 }
-html {
+body {
 	overflow-y: scroll;
     background-image: url(../images/img1.png);
     background-position: center top;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-attachment: fixed;
 }
-body {
+header,main{
 	letter-spacing: 1px;
 	line-height: 21px;
     width: 70%; 
@@ -33,18 +32,21 @@ body {
 }
 main {
     background-color: var(--white);
-    width:100%;
 }
-main > :nth-child(n+3){ /*gælder for main men ikke de første 2 elementer*/
+main > :nth-child(n+3):not(.div-logo){ /*gælder for main men ikke de første 2 elementer*/
     margin: 0 auto;
-    width: 84%;
+    padding: 0 4%;
 }
 header{
-    width: 100%;
     text-align: center;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
 }
-
 /* menu */
+header > :nth-child(1){ /* first nav */ 
+    grid-area: 1/1/1/9;
+    display: flex;
+}
 nav {
     width: 70%;
 }
@@ -61,12 +63,6 @@ nav li a{
     color: var(--grey);
     margin: 10px;
 }
-.active{
-    color: var(--red)!important;
-}
-.active2{
-    color: var(--black)!important;
-}
 header nav:nth-child(1){ /* gælder header nav nr. 1 */
     background-color:var(--black);
     height:6%;
@@ -80,7 +76,7 @@ header nav:nth-child(1) img{ /* gælder header nav img nr. 1 */
     float: left;
     width: 7%;
 }
-header nav:nth-child(1) li a { /* gælder header nav li a nr. 1 */
+header nav:nth-child(1) li a:not(.active) { /* gælder header nav li a nr. 1 */
     color: var(--grey);
     margin: 10px;
 }
@@ -96,15 +92,25 @@ header nav:nth-child(2) ul{ /* gælder header nav ul nr. 2 */
     justify-content: space-around;
     color: var(--white);
 }
-header nav:nth-child(2) li a{ /* gælder header nav li a nr. 2 */
+header nav:nth-child(2) li a:not(.active2){ /* gælder header nav li a nr. 2 */
     color: var(--white);
     
+}
+.active{
+    color: var(--red);
+}
+.active2{
+    color: var(--black);
 }
 
 /* main */
 h2{
     font-size: 1.2em;
 }
+.breadCrumbs{
+    padding: 0 4%;
+}
+
 
 main nav:nth-child(1){ /* gælder main nav nr. 1 */
     width: 100%;
@@ -133,7 +139,7 @@ main section:nth-child(3) p { /* gælder main section nr. 3 - overskrift og rubr
     font-size: 1.5em;
     line-height: 1em;
 }
-main section:nth-child(5) { /* gælder main section nr. 5 - Baggrundsbillede og logo */
+.div-logo { /* gælder main section nr. 5 - Baggrundsbillede og logo */
     background-image: url(../images/Lag287.png);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -147,15 +153,15 @@ main section:nth-child(5) div { /*gælder main section div nr. 5 */
     padding: 7%;
 }
 
-main section:nth-child(6) { /* gælder main section h2 nr. 6 - circklerne */
+.values { /* circklerne */
     text-align: center;
-    height:500px;
+    height:536px;
 }
-main section:nth-child(6) div div{ /* gælder main section div div nr. 6 */
+.values article{ /* circles text */
     width: 49%;
     float: left;
 }
-main section:nth-child(6) h3 { /* gælder main section h3 nr. 6 */
+.values article h3 { /* circels heading */
     width: 7em;
     height: 7em;
     line-height: 7;
@@ -166,50 +172,51 @@ main section:nth-child(6) h3 { /* gælder main section h3 nr. 6 */
     background: var(--red);
     margin: 0 auto;
 }
+/*footer*/
 
-main section:nth-child(7) { /* gælder main section nr. 7 - sponsor */
+footer{ /* gælder footer - menu */
+    background-color:var(--black);
+    width:100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.div-sponsor { /* sponsor */
     padding: 4%;
     background-color: var(--grey);
-    width: 92%;
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-area: 1/1/1/6;
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
 }
-/*footer*/
-footer{ /* gælder footer - menu */
-    background-color:var(--black);
-    display: flex;
+img{
+    margin:0 auto;
 }
-footer nav, footer div{ /* gælder footer nav og footer div */
-    display: flex;
-    flex-direction: row;
-    flex-flow: column wrap;
-    align-items: flex-start;
-    font-size: 0.7em;
+
+
+footer nav, .footer-text{ /* footer nav and footer div */
     color: var(--grey);
-    margin-left: 1%;
+    padding-left: 15%;
 }
-footer nav li {  /* gælder footer nav a */
+footer nav li {  /* footer nav a */
     display: block;
 }
-footer nav a {  /* gælder footer nav a */
+footer nav a {  /*  footer nav a */
     color: var(--white);
 }
-footer div{  /* gælder footer div */
+.footer-text{  /* footer div */
     color: var(--grey);
     font-size: 0.9em;
     width: 80%;
     margin-top: 5%;
 }
-footer div span{  /* gælder footer div span */
+.footer-text span{  /* footer div span */
     color: var(--red);
 }
-footer div nav a{
+.footer-text nav a{
     align-items: flex-end;
     margin:0;
 }
-footer div nav:last-child li{
-    display: inline;
-    margin:0
+footer:last-child nav{
+    padding: 0;
 }

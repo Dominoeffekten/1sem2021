@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap");
+@import url("https://csschristmascalendar.com/assets/freeserif/font.css");
+/* CSs from https://webdesign.tutsplus.com/tutorials/how-to-build-a-festive-advent-calendar-with-css-grid--cms-30070 */
+
+/*-------
+    mobil
+    Generel design
+--------*/
+body {
+    background: url(https://i.imgur.com/FnJbmo1.jpg) no-repeat top center #8ac1d6;
+    background-size: cover;
+    font-family: "Mountains of Christmas", cursive;
+    display: flex;
+    flex-direction: column;
+}
+/* main */
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    width: 96%;
+    max-width: 950px;
+    margin: 2% auto;
+    grid-gap: 25px;
+    grid-template-areas:
+    "title  title  title"
+    "day22  day3   day8"
+    "day9   day18  day11"
+    "day2   day24  day13"
+    "day12  day10  day4"
+    "day20  day1   day7"
+    "day5   day14  day17"
+    "day16  day23  day6"
+    "day15  day21  day19"
+    "footer  footer footer";
+}
+/* title */
+    h1 {
+        grid-area: title;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    /* title CSS */
+        h1 span:nth-of-type(1) {
+            color: #9c163f;
+            display: block;
+            transform: rotate(-10deg);
+            font-size: 2em;
+        }
+     /* title christmas */
+        h1 span:nth-of-type(2) {
+            color: #423583;
+            display: block;
+            transform: rotate(10deg);
+            font-size: 2em;
+        }
+    /* title calender */
+        h1 span:nth-of-type(3) {
+            color: #000;
+            display: block;
+            font-size: 2em;
+        }
+/* calender*/
+    /* calender*/
+    div:nth-of-type(1){
+        grid-area: day1;
+    }
+    div:nth-of-type(2){
+        grid-area: day2;
+    }
+    div:nth-of-type(3){
+        grid-area: day3;
+    }
+    div:nth-of-type(4){
+        grid-area: day4;
+    }
+    div:nth-of-type(5){
+        grid-area: day5;
+    }
+    div:nth-of-type(5) .back {
+        background: url(https://images.unsplash.com/photo-1513297887119-d46091b24bfa?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2940&q=80);
+        background-position: center;
+        background-size: cover;
+    }
+    div:nth-of-type(6){
+        grid-area: day6;
+    }
+    div:nth-of-type(7){
+        grid-area: day7;
+    }
+    div:nth-of-type(8){
+        grid-area: day8;
+    }
+    div:nth-of-type(9){
+        grid-area: day9;
+    }
+    div:nth-of-type(9) .back {
+        background: url(https://images.unsplash.com/photo-1545048702-79362596cdc9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80);
+        background-position: center;
+        background-size: cover;
+    }
+    div:nth-of-type(10){
+        grid-area: day10;
+    }
+    div:nth-of-type(11){
+        grid-area: day11;
+    }
+    div:nth-of-type(12){
+        grid-area: day12;
+    }
+    div:nth-of-type(13){
+        grid-area: day13;
+    }
+    div:nth-of-type(13) .back {
+        background: url(https://images.unsplash.com/photo-1479722842840-c0a823bd0cd6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1772&q=80);
+        background-position: center;
+        background-size: cover;
+    }
+    div:nth-of-type(14){
+        grid-area: day14;
+    }
+    div:nth-of-type(15){
+        grid-area: day15;
+    }
+    div:nth-of-type(16){
+        grid-area: day16;
+    }
+    div:nth-of-type(17){
+        grid-area: day17;
+    }
+    div:nth-of-type(18){
+        grid-area: day18;
+    }
+    div:nth-of-type(18) .back {
+        background: url(https://images.unsplash.com/photo-1575549593677-012f18048ea1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1770&q=80);
+        background-position: right center;
+        background-size: cover;
+    }
+    div:nth-of-type(19){
+        grid-area: day19;
+    }
+    div:nth-of-type(20){
+        grid-area: day20;
+    }
+    div:nth-of-type(21){
+        grid-area: day21;
+    }
+    div:nth-of-type(22){
+        grid-area: day22;
+    }
+    div:nth-of-type(23){
+        grid-area: day23;
+    }
+    div:nth-of-type(24){
+        grid-area: day24;
+    }
+    div:nth-of-type(24) .back {
+        background: url(https://images.unsplash.com/photo-1482517716521-3120e5340ed3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=776&q=80);
+        background-position: bottom center;
+        background-size: cover;
+    }
+/*doors*/
+    input {
+        display: none;
+    }
+    label {
+        perspective: 1000px;
+        transform-style: preserve-3d;
+        cursor: pointer;    
+        display: flex;
+        min-height: 100%;
+        width: 100%;
+        height: 120px;
+    }
+    .door {
+        width: 100%;
+        transform-style: preserve-3d;
+        transition: all 300ms;
+        border: 2px dashed black;
+    }
+    .door div {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            backface-visibility: hidden;
+        
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Kalam', cursive;
+            color: #385052;
+            font-size: 2em;
+            font-weight: bold;
+            text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.2);
+          }
+        
+        .door .back {
+            background-size: contain;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-color: #2e313d;
+            color: white;
+            text-align: center;
+            transform: rotateY(180deg);
+        }
+        label:hover .door {
+            border-color: #385052;
+        }
+        
+        :checked + .door {
+            transform: rotateY(180deg);
+        }
+footer{
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*-------
+    desktop
+--------*/
+@media screen and (min-width:900px){
+    main {
+        grid-template-columns: repeat(8, 1fr);
+        grid-gap: 1em;
+        grid-template-areas:
+            "title title  title  title  day5   day17  day15  day23"
+            "title title  title  title  day11  day20  day16  day13"
+            "title title  title  title  day1   day18  day6  day3"
+            "day12  day9   day22  day14  day24  day24  day4  day19"
+            "day12  day10  day21  day2   day24  day24  day8  day7";
+    }
+}

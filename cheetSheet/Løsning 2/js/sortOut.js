@@ -9,7 +9,8 @@ const css = document.querySelectorAll('button')[2]; //CSS button
 const js = document.querySelectorAll('button')[3]; //JS button
 const seo = document.querySelectorAll('button')[4]; //SEO button
 const program = document.querySelectorAll('button')[5]; //program button
-let buttons = [all, html, css, js, seo, program] //insert them in an array
+const tech = document.querySelectorAll('button')[6]; //teknologi button
+let buttons = [all, html, css, js, seo, program, tech] //insert them in an array
 
 buttons.forEach(button => { 
     button.addEventListener('click', function() {
