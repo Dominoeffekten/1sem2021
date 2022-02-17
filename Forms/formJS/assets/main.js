@@ -1,6 +1,6 @@
 'use strict';
 
-let form = document.getElementsByTagName("form")[0]; //from hte html file
+let form = document.getElementsByTagName("form")[0]; //from the html file
 
 document.getElementById("send").addEventListener("click", function(e){
     //https://www.valentinog.com/blog/form-data/
@@ -24,7 +24,7 @@ document.getElementById("send").addEventListener("click", function(e){
 
     //add a background story
     let story = document.querySelectorAll('.bgStory')[0];
-    story.innerHTML = "";
+    story.innerHTML = " ";
     story.innerHTML = data.bgStory; //fill out p
 
     //accessories
@@ -33,12 +33,12 @@ document.getElementById("send").addEventListener("click", function(e){
     let notChecked = document.querySelectorAll('input[type="checkbox"]'); //check checkboxes
     for (var checkbox of notChecked) { 
         document.getElementsByClassName(checkbox.value)[0].style.display = "none";
-    }
+    };
     //add them
     let checked = document.querySelectorAll('input[type="checkbox"]:checked'); //check checkboxes
     for (var checkbox of checked) { //check if they are checked
         document.getElementsByClassName(checkbox.value)[0].style.display = "block";
-    }
+    };
 });
 
 
@@ -57,12 +57,12 @@ document.getElementById("reset").addEventListener("click", function(e){
 
     //add a background story
     let story = document.querySelectorAll('.bgStory')[0];
-    story.innerHTML = "";
+    story.innerHTML = " ";
 
     //accessories
     //remove them
     let notChecked = document.querySelectorAll('input[type="checkbox"]'); //check checkboxes
     for (var checkbox of notChecked) { 
         document.getElementsByClassName(checkbox.value)[0].style.display = "none";
-    }
+    };
 });

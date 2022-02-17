@@ -21,12 +21,18 @@ main{
     height: 100%;
 }
 /*---------------
-    inside main
+    inside 
+    main
 ----------------*/
 
 article, div{
     width:49%;
     float:left;
+}
+form, fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 /*---------------
@@ -34,13 +40,11 @@ article, div{
     Input
 ----------------*/
 form{
-    display: grid;
     width:60%;
     font-size: 16px;
 }
 fieldset{
     border: none;
-    display: grid;
     padding:0;
 }
 
@@ -61,24 +65,3 @@ button{
     button[type=reset]{
         background-color: rgb(49, 175, 213, .5);
     }
-
-/*---------------
-    SVG
-----------------*/
-
-.tattos,.sunGlasses,.glasses,.hat,.neckless,.male,.female{
-    display:none;
-}
-svg{
-    width: 50%;
-}
-.avatarBody, .eyes{
-    fill:#FFFFFF;
-    stroke:#000000;
-    stroke-miterlimit:10;
-}
-
-                .st1{fill:none;stroke:#000000;stroke-miterlimit:10;}
-                .st2{display:none;}
-                .st3{display:inline;fill:none;stroke:#000000;stroke-miterlimit:10;}
-                .st4{display:inline;}
